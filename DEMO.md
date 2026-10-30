@@ -23,3 +23,23 @@ Recovered core pages can replace a restricted set of generic templates in previe
 See [inventory](practice/CONTENT-INVENTORY.md) and [verification](practice/MIGRATION-VERIFICATION.md). Public evidence contains only source URLs/capture metadata and factual summaries, not credentials, patient data or executable archive copies. Upstream template licences do not grant permission to relicense recovered practice material; source attribution is retained.
 
 Deploy only to the new `barlow-site` Pages project, never `hhc-site`. To take this demo down, remove its deployment/domain through this new project's settings, preserving all unrelated projects and records. If changing DNS, save the exact prior `barlow.oddtv.uk` record privately first; do not touch the apex, email, HHC or other hosts. Never infer custom-domain activation from a successful Pages upload.
+
+## Deployment record, 30 October 2026
+
+- Separate clone: `/home/oscar/Documents/Code_Projects/Barlow_site`. Fresh upstream baseline `9f58d4a6f1441c5c046da472f97d78cd1d734f12`.
+- New public project: <https://github.com/AbsurdSyssie/Barlow_site>. Only this project's `origin` was pushed; upstream push URL is locally disabled.
+- Cloudflare Pages project: `barlow-site`, main branch, direct upload of tested `_preview` only. Working address: <https://barlow-site.pages.dev/>. First immutable deployment: <https://521d458c.barlow-site.pages.dev/> from implementation commit `612b1cbd808c446fa56502e111eaf30f32952f4a`.
+- Initial `wrangler pages project create` attempted the CLI's new Workers delegation and failed without deploying. Retried once with the documented `--force` creation flag to create a conventional Pages project. Subsequent upload succeeded without that flag.
+- Custom hostname `barlow.oddtv.uk` is attached **but pending**, with Cloudflare reporting **“CNAME record not set”**. HTTPS currently returns **525**, not a working demo. DNS read for this exact hostname returned **403** using the authorised OAuth token, so no DNS record was read, backed up or written. Existing unrelated DNS and HHC resources were not changed.
+- Live homepage and appointments returned HTTP 200 with `X-Robots-Tag: noindex, nofollow`; robots.txt disallows crawling. A missing path returned HTTP 404 with the noindex header. All 19 local HTML pages passed the safety/content audit and demo HTML validation.
+- Live home, appointments, opening times, contact and about pages were exercised at 390x844, 768x1024 and 1440x900. No horizontal overflow at standard text size. Home screenshots at all three sizes, phone appointments and desktop contact were inspected. Skip-link keyboard focus and mobile More navigation worked; no broken image assets were found. Reduced motion and 200% root-text enlargement were exercised; this is not a browser/assistive-technology accessibility certification.
+- Local screenshots are `/tmp/opencode/barlow-390.png`, `barlow-768.png`, `barlow-1440.png`, `barlow-appointments-phone.png`, `barlow-contact-desktop.png` and `barlow-zoom200.png`, not committed. A browser tool automatically wrote one disposable snapshot under the original workspace; that exact new artifact was removed immediately. No HHC source, git, server, deployment or domain configuration was changed.
+- The inherited CI and GitHub publishing workflows ran after the push and correctly stopped at the production check on the two missing genuine facts. GitHub Pages settings were not enabled or modified. This is intentional gate evidence, not green production CI.
+
+### Complete the demo hostname in the Cloudflare dashboard
+
+1. In `oddtv.uk` DNS settings, inspect **only** the exact `barlow.oddtv.uk` record(s), and privately save their complete current settings for rollback. Do not alter wildcard, apex, email, HHC or other host records.
+2. Set the exact `barlow` host to a **CNAME** targeting **`barlow-site.pages.dev`**, with no scheme or path. Resolve only exact-host conflicts after recording them. If in doubt, stop rather than removing a broader record.
+3. In Workers & Pages → `barlow-site` → Custom domains, wait for `barlow.oddtv.uk` verification and certificate activation. Check HTTPS home, appointments, assets and noindex headers before saying the address works. Do not bypass certificate warnings.
+
+Until then, use the working `.pages.dev` demo address. No patient-facing launch or practice approval is implied by either hostname.
