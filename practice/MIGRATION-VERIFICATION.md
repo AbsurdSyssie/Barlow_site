@@ -1,5 +1,11 @@
 # Migration verification record
 
+## Independent live-copy follow-up, 30 October 2026
+
+Read all 19 live HTML page bodies at `https://barlow.oddtv.uk/`, including inherited home, contact, about, urgent help and 404, before editing. The previous ordinary patient copy was already live, so no blanket rewrite was necessary. Contact now has the requested “Contact us” title, direct source-equal PATCHS link, reception hours, original map destination, parking and access/communication support. Accessibility now gives usable keyboard and alternative-format help rather than a technical audit disclaimer; the outstanding audit remains in migration queries. No staff, services, ordering instructions, request times or medical safety content was removed.
+
+Verification: lint, all 42 valid-fixture tests, fresh demo build, 19-page HTML validation, expanded all-page copy/safety audit and REUSE 94/94 passed. Actual production check and build both returned exit 1 for the missing genuine review date and earnings year. No gate or approval data changed. All 19 pages rendered at 390, 768 and 1440 pixels with one banner, urgent help, no forms/frames and no horizontal overflow. Contact phone/desktop full-page screenshots were inspected, saved only in `/tmp/opencode/barlow-clean-copy/`. Live redeployment verification follows in DEMO.md.
+
 Status: **unofficial public demo, not practice-approved**. Evidence retrieval and demo statement preparation: 30 October 2026. This is not a content review/sign-off date. Independent review remains outstanding.
 
 ## Sources

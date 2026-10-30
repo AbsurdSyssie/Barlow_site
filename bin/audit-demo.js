@@ -31,6 +31,17 @@ for (const file of files) {
     /Historical|archived|unverified|unconfirmed|Unreviewed|No practice sign-off|financial year has not been confirmed|Website content last reviewed|£66,154|Handforth|Fernmoor|MIGRATION-QUERIES|CONTENT-INVENTORY|web\.archive\.org/i,
     file,
   );
+  // Check readable patient copy, including inherited templates, without the
+  // single global demo banner. Keep normal service conditions ("if you cannot
+  // use online services", boundary checks, clinical review) unrestricted.
+  const main = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)?.[1];
+  assert.ok(main, `${file}: missing patient content`);
+  const copy = main.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ");
+  assert.doesNotMatch(
+    copy,
+    /source[- ](?:derived|observed|based)|supplied source|archive does not prove|not (?:been )?confirmed|confirm (?:the |our )?(?:current |correct )?(?:details|information|facts)|contact.{0,30}confirm|current details.{0,30}(?:phone|call)|restor(?:e|ed|ation)|independent accessibility audit|assistive-technology assessment|not practice.approved|migration|demonstration/i,
+    `${file}: administrative qualification in patient copy`,
+  );
   for (const [, href] of html.matchAll(/(?:href|src)="(\/[^"#?]*)(?:[?#][^"]*)?"/g)) {
     const local = path.join(root, href.endsWith("/") ? `${href}index.html` : href);
     assert.ok(fs.existsSync(local), `${file}: broken local link ${href}`);
@@ -49,6 +60,14 @@ for (const file of [
   assert.doesNotMatch(html, /aria-disabled="true"/);
 }
 assert.match(read("contact/index.html"), /href="\/appointments\/"/);
+const contact = read("contact/index.html");
+assert.match(contact, /<h1[^>]*>Contact us<\/h1>/);
+assert.ok(contact.includes(`href="${destination}"`), "Contact needs a direct PATCHS link");
+assert.match(contact, /8am to 6:30pm, Monday to Friday/);
+assert.match(contact, /View on a map/);
+assert.match(contact, /828 Wilmslow Road/);
+assert.match(contact, /interpreter/);
+assert.match(contact, /vehicle registration/);
 assert.match(read("index.html"), /Do not use for emergencies/);
 const appointments = read("appointments/index.html");
 assert.match(appointments, /After 10am/);
