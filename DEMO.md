@@ -1,5 +1,14 @@
 # Barlow recovered-site demonstration
 
+## Independent live-copy follow-up deployment, 30 October 2026
+
+- Implementation: `28b1df46cc9462164a45a85b87822b42f09c7928`, pushed to this repository only. Demo deployment: <https://31ee89df.barlow-site.pages.dev/> on **barlow-site**. Live contact: <https://barlow.oddtv.uk/contact/>; home: <https://barlow.oddtv.uk/>.
+- Read every one of the 19 live page bodies before editing. The earlier broad rewrite was already live. Targeted changes: “Contact and find us” becomes “Contact us”; indirect “Use our online form” becomes a direct PATCHS link with booking help, reception hours, address/map, parking and access support. The accessibility audit disclaimer becomes practical keyboard/skip-link and alternative-format help. Audit uncertainty remains nonrendered. Other substantive patient copy stays intact.
+- Changed implementation files: `practice/pages/contact.md`, `practice/pages/accessibility-statement.md`, `bin/audit-demo.js`; administrative evidence: `practice/MIGRATION-QUERIES.md`, `practice/MIGRATION-VERIFICATION.md` and this record. No inherited template or safety gate was changed.
+- Lint, all 42 valid-fixture tests, fresh demo build, all 19-page HTML validation, expanded all-page copy audit and REUSE passed. Production check/build both correctly failed on missing genuine review date and earnings year. All 19 pages rendered at phone/tablet/desktop widths without overflow, duplicate banners, missing urgent help or forms/frames. Contact screenshots inspected.
+- Post-deployment: all 19 HTML responses on **both** the immutable deployment and custom hostname exactly matched the tested local artifact, with noindex headers. Robots matched on both. Browser inspection independently confirmed the new Contact title/body and unchanged source-authentic homepage PATCHS link on the custom domain; no stale-cache mismatch observed. This checks `/404.html` as a normal URL, separately from genuine missing paths.
+- Genuine missing paths still return HTTP 404 and noindex on both hosts. The immutable deployment's 404 matches local bytes; the custom host's true 404 still receives Cloudflare challenge-platform JavaScript. This pre-existing hosting exception is unresolved, not counted as a clean missing-path audit. No DNS, zone security or HHC resources were changed.
+
 This is an unofficial personal archive-recovery demonstration for Barlow Medical Centre, not the practice's official website. The practice has not approved it. The real practice details are historical/source-derived, not invented testing data. Do not direct patients here or submit patient information.
 
 The user explicitly authorised a new public `AbsurdSyssie/Barlow_site` project, Cloudflare Pages demo hosting and only the `barlow.oddtv.uk` hostname. This is a scoped exception for demonstration hosting, not official practice ownership/sign-off. The HHC checkout, repository, server, domain and deployment must not be changed.
