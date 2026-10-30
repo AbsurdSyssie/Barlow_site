@@ -21,6 +21,14 @@ Ratings use the DCB0129 risk matrix: severity (1 minor to 5 catastrophic) and li
 
 ## Open actions
 
+### Unofficial recovery demo controls (H1, H2, H3, H5, H7, H10)
+
+This copy is a personal archive-recovery demonstration, not a practice deployment. No practice sign-off has occurred. `build:demo` uses a separate config and clears `_preview` before rendering; production `_site` is not read or written. Only absent `site.content_last_reviewed` and `gp_earnings.financial_year` may be deferred. Invalid supplied values, missing other required facts, placeholders and untrusted embeds still block. The default checker and production build remain strict. Undated earnings are omitted, not relabelled with an invented year.
+
+Every preview HTML page, including errors and recovered Markdown pages, uses the base layout with an unofficial banner, noindex/nofollow, no sign-off claim and the unchanged urgent-help partial. Preview-only overrides are restricted to a fixed list of informational pages, never urgent-help or about/earnings. Recovered content must not contain patient forms, active supplier actions, trackers or clinical advice. It describes historical processes, distinguishing archive capture dates from source update dates. Generic template service promises are replaced in the demo where the source contradicts them. Tests in `tests/preview.test.js` exercise these boundaries with fictional data. Built Barlow HTML is also checked for urgent help, disclaimers, forms and active supplier links.
+
+Residual risks: public noindex is advisory, not access control; search engines may ignore it, and users may still mistake archived content for current care instructions. Staff names and source content require current practice consent and rights review before an official launch. Owner for sign-off remains the practice's responsible safety lead, not this demonstration's maintainer. Status: unapproved demo, independent review outstanding. No revised residual risk rating is claimed.
+
 - Re-review ratings when the template changes in a way that affects a hazard or control.
 - Add automated accessibility testing (for example axe) to CI.
 - Consider a Content Security Policy generated from the trusted embed domains.

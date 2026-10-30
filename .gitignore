@@ -3,6 +3,16 @@
 
 node_modules/
 /_site
+/_preview
+/.wrangler
+/.private
+
+# Disposable browser and agent artefacts
+/.playwright-mcp
+/.playwright
+/playwright-report
+/blob-report
+/test-results
 *.zip
 .DS_Store
 

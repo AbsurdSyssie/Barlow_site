@@ -11,15 +11,36 @@ import * as filters from "./lib/filters.js";
 const NHSUK_DIST = "node_modules/nhsuk-frontend/dist";
 
 export default function (eleventyConfig) {
+  return configureSite(eleventyConfig);
+}
+
+export function configureSite(eleventyConfig, { draftPreview = false } = {}) {
   const practiceDir = path.resolve(process.env.PRACTICE_DIR ?? "practice");
   const result = loadPractice(practiceDir);
 
+  // Defer only absent review facts. Invalid supplied facts still fail closed.
+  const deferred = draftPreview
+    ? result.errors.filter((error) => {
+        const fields = {
+          "gp_earnings.financial_year": result.data.gp_earnings?.financial_year,
+          "site.content_last_reviewed": result.data.site?.content_last_reviewed,
+        };
+        return (
+          Object.hasOwn(fields, error.field) &&
+          (fields[error.field] == null || String(fields[error.field]).trim() === "")
+        );
+      })
+    : [];
+  const blockingErrors = result.errors.filter((error) => !deferred.includes(error));
+
   // Stop the build if anything patients rely on is missing or wrong.
   const report = formatProblems(result);
-  if (result.errors.length) {
+  if (blockingErrors.length) {
     throw new Error(`\n${report}\n\nRun "npm run check" for this list again.`);
   }
   if (report) console.warn(report);
+
+  eleventyConfig.addGlobalData("draftPreview", draftPreview);
 
   eleventyConfig.addGlobalData("practice", result.practice);
   eleventyConfig.addGlobalData(
@@ -40,14 +61,33 @@ export default function (eleventyConfig) {
 
   // Each Markdown file in practice/pages becomes a page at /<file-name>/
   for (const page of result.pages) {
+    // Recovered demo copy may replace generic service promises, but never the
+    // urgent-help control or its layout. This facility is preview-only.
+    const replaceable = [
+      "index",
+      "appointments",
+      "prescriptions",
+      "test-results",
+      "contact",
+      "register",
+      "our-team",
+      "services",
+      "news",
+      "complaints",
+      "accessibility-statement",
+      "opening-times",
+    ];
+    if (draftPreview && replaceable.includes(page.slug)) {
+      eleventyConfig.ignores.add(`src/${page.slug}.njk`);
+    }
     eleventyConfig.addTemplate(`practice-pages/${page.slug}.md`, page.content, {
       layout: "page.njk",
-      permalink: `/${page.slug}/`,
+      permalink: page.slug === "index" && draftPreview ? "/" : `/${page.slug}/`,
     });
   }
 
   const customDomain = result.practice.site?.custom_domain;
-  if (customDomain) {
+  if (customDomain && !draftPreview) {
     eleventyConfig.addTemplate("cname.njk", customDomain, {
       permalink: "/CNAME",
       eleventyExcludeFromCollections: true,

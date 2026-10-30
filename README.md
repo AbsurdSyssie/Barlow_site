@@ -1,5 +1,7 @@
 # Open GP Practice Website
 
+> This copy is the **unofficial Barlow Medical Centre recovered-site demo**, not an approved practice website. Start with [DEMO.md](DEMO.md). The original template documentation below is retained for reference; its official publishing instructions must not be followed without practice sign-off.
+
 A free, open source website template that lets a GP practice put a safe, NHS-style website online in an afternoon, with an AI assistant doing the technical work.
 
 [![CI](https://github.com/pacharanero/open-gp-practice-website/actions/workflows/ci.yml/badge.svg)](https://github.com/pacharanero/open-gp-practice-website/actions/workflows/ci.yml)

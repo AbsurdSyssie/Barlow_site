@@ -1,34 +1,9 @@
 ---
 title: Privacy notice
-description: How Fernmoor Medical Practice uses your personal information.
 ---
 
-**This is an example privacy notice for a fictional practice. A real practice must replace it with its own privacy notice, usually provided by its Data Protection Officer or ICB.**
+This is an unofficial demonstration, not the practice's website. Do not send patient information to this site or its maintainer. It has no patient forms, accounts, analytics or tracking.
 
-## Who we are
+The practice's historical [privacy notice was captured on 9 May 2026](https://web.archive.org/web/20260509144359/https://barlowmed.com/surgery-information/policies/privacy-notice/). It contains references to older legislation, historic organisations, website chatbots and clinical systems. It has not been adopted as this demo's policy or rewritten as a new practice policy.
 
-Fernmoor Medical Practice is the data controller for the information we hold about you. This means we decide how your information is used and are responsible for keeping it safe.
-
-## What information we hold
-
-We keep records about your health and the care you receive from us and other NHS services. This includes your name, address, date of birth, NHS number, contact details, appointments, diagnoses, medicines, test results and letters from hospitals.
-
-## How we use your information
-
-We use your information to give you safe and effective care. We share it with other health and care professionals who are directly involved in your care, such as hospitals, community nurses and pharmacies.
-
-## Your rights
-
-You have the right to see the information we hold about you, to ask us to correct it, and to object to some uses of it. To ask for a copy of your record, contact the practice manager.
-
-## Our Data Protection Officer
-
-Our Data Protection Officer can be contacted through the practice.
-
-## Complaints about how we use your information
-
-If you are unhappy with how we use your information, contact the practice manager first. You can also complain to the Information Commissioner's Office at [ico.org.uk](https://ico.org.uk/).
-
-## This website
-
-This website does not use cookies or collect personal information. See our [cookies page](/cookies/) for details about online services provided by other companies.
+For the practice's current privacy notice, contact the practice through its [NHS profile](https://www.nhs.uk/services/gp-surgery/barlow-medical-centre/P84034). The Data Protection Officer must supply and approve the current notice before any official launch.
