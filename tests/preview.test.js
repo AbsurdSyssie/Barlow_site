@@ -55,6 +55,10 @@ test("unofficial preview defers only absent review facts, not safety errors (H1,
       fs.readFileSync(path.join(tmp, "preview/_headers"), "utf8"),
       /X-Robots-Tag: noindex, nofollow/,
     );
+    assert.match(
+      fs.readFileSync(path.join(tmp, "preview/_headers"), "utf8"),
+      /Cache-Control: .*no-transform/,
+    );
     assert.match(fs.readFileSync(path.join(tmp, "preview/robots.txt"), "utf8"), /Disallow: \//);
     const about = fs.readFileSync(path.join(tmp, "preview/about/index.html"), "utf8");
     assert.doesNotMatch(about, /GP earnings|financial year has not been confirmed|latest CQC/);

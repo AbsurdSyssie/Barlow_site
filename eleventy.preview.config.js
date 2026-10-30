@@ -6,7 +6,7 @@ import { configureSite } from "./eleventy.config.js";
 export default function (eleventyConfig) {
   eleventyConfig.addTemplate(
     "preview-headers.njk",
-    "/*\n  X-Robots-Tag: noindex, nofollow\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n",
+    "/*\n  X-Robots-Tag: noindex, nofollow\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Cache-Control: public, max-age=0, must-revalidate, no-transform\n",
     {
       permalink: "/_headers",
       eleventyExcludeFromCollections: true,

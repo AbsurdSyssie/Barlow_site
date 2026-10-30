@@ -64,6 +64,7 @@ assert.match(
   fs.readFileSync(path.join(root, "_headers"), "utf8"),
   /X-Robots-Tag: noindex, nofollow/,
 );
+assert.match(fs.readFileSync(path.join(root, "_headers"), "utf8"), /Cache-Control: .*no-transform/);
 assert.match(fs.readFileSync(path.join(root, "robots.txt"), "utf8"), /Disallow: \//);
 console.log(
   `Audited all ${files.length} demo HTML pages: single banner, noindex, urgent help, local links, source-authentic PATCHS anchors, no collection or stale archive prose.`,

@@ -76,6 +76,7 @@ export function configureSite(eleventyConfig, { draftPreview = false } = {}) {
       "complaints",
       "accessibility-statement",
       "opening-times",
+      "cookies",
     ];
     if (draftPreview && replaceable.includes(page.slug)) {
       eleventyConfig.ignores.add(`src/${page.slug}.njk`);
