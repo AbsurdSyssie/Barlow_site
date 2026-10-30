@@ -42,13 +42,10 @@
 {% block header %}
   {% if draftPreview %}
     {{ environmentBanner({
-      tag: "Unofficial recovered-site demo",
-      text: "Demonstration only, not the official practice website. Unreviewed content. Not approved for patient use. Do not submit patient information. Historical details need practice confirmation. For current services use the NHS practice profile linked below.",
+      tag: "Unofficial demo",
+      text: "Demonstration only, not the official practice website. Not approved by the practice. This site does not collect patient information.",
       colour: "yellow"
     }) }}
-    <div class="nhsuk-width-container nhsuk-u-padding-top-3 nhsuk-u-padding-bottom-3">
-      <a href="https://www.nhs.uk/service-search/find-a-gp">Find the current practice profile on NHS.uk</a>
-    </div>
   {% endif %}
   {% if practice.demo %}
     {{ environmentBanner({
@@ -116,8 +113,8 @@
       }
     ],
     meta: {
-      text: ("Unreviewed draft preview. No practice sign-off. Practice code " ~ p.ods_code ~ ".") if draftPreview else ("Website content last reviewed " ~ (practice.site.content_last_reviewed | ukDate(false)) ~ ". Practice code " ~ p.ods_code ~ ".")
+      text: ("Practice code " ~ p.ods_code ~ ".") if draftPreview else ("Website content last reviewed " ~ (practice.site.content_last_reviewed | ukDate(false)) ~ ". Practice code " ~ p.ods_code ~ ".")
     },
-    copyright: { text: "Unofficial demonstration, not operated by the practice" if draftPreview else ("© " ~ p.name) }
+    copyright: { text: "" if draftPreview else ("© " ~ p.name) }
   }) }}
 {% endblock %}

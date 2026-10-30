@@ -9,17 +9,15 @@ practice:
   ods_code: P84034
   nation: england
   description: >-
-    Unofficial recovered-site demonstration for Barlow Medical Centre in Didsbury,
-    Manchester. Historical information is not confirmed for current patient use.
+    GP services in Didsbury, Manchester. Find out how to request an appointment,
+    order a prescription and contact the practice.
 site:
   url: https://barlow.oddtv.uk/
   custom_domain: ""
   content_last_reviewed: ""
 contact:
   phone: "0161 445 9000"
-  phone_hours: >-
-    not separately confirmed. Archived reception opening hours were 8am to
-    6:30pm, Monday to Friday; check the current NHS profile before relying on them
+  phone_hours: Monday to Friday
 sites:
   - name: Barlow Medical Centre
     address:
@@ -28,12 +26,11 @@ sites:
       - Manchester
     postcode: M20 2RN
     parking: >-
-      The archived contact page lists car, cycle and disabled parking, with ANPR
-      cameras and a requirement to give your registration at reception. Confirm
-      current parking arrangements before visiting.
+      Car, cycle and disabled parking are available. ANPR cameras operate in the
+      car park. Give your vehicle registration at reception to avoid a parking fine.
     accessibility:
-      - "Archived listing: step-free access and wheelchair access"
-      - "Archived listing: disabled WC and induction loop"
+      - Step-free access and wheelchair access
+      - Disabled WC and induction loop
 opening_hours:
   monday: [{ opens: "08:00", closes: "18:30" }]
   tuesday: [{ opens: "08:00", closes: "18:30" }]
@@ -42,30 +39,29 @@ opening_hours:
   friday: [{ opens: "08:00", closes: "18:30" }]
   saturday: closed
   sunday: closed
-  notes:
-    - Historical reception hours only, not confirmed phone or current opening hours.
+  notes: []
 closures: []
 notices: []
 online_services:
   online_consultation:
     provider: PATCHS
-    label: Archived appointment information
-    # Copied verbatim from the archive. Not rendered as a live action in the demo.
+    label: Contact us online with PATCHS
+    # Exact archived href, checked against the live Barlow PATCHS landing page.
     url: https://patchs.ai/practice/barlowmedicalcentre
-    availability: Archived clinical requests 7am to 10am, Monday to Friday; not confirmed current
+    availability: Clinical requests 7am to 10am, Monday to Friday
     embed_html: ""
   nhs_app: true
   prescriptions:
-    turnaround: Archived policy said 2 working days to the nominated pharmacy.
-  test_results: Archived policy said to call after 10am, or use the NHS App or Patient Access.
+    turnaround: Your prescription should reach your nominated pharmacy 2 working days after ordering.
+  test_results: Call after 10am, or use your NHS account or Patient Access once your results have been reviewed.
 trusted_embed_domains: []
 team: []
 services: []
 registration:
-  catchment: Archived registration page described an M20 catchment area. Exact boundary unconfirmed.
+  catchment: We serve the M20 area. Call reception to check whether your address is within our practice boundary.
 complaints:
-  contact: the practice, via reception (current responsible contact needs confirmation)
-  how: Archived policy accepted written complaints at the surgery address.
+  contact: the practice, via reception
+  how: You can make a complaint in writing to the surgery address.
 gp_earnings:
   # Archive says "last financial year" without specifying which year. Omit publicly.
   financial_year: ""

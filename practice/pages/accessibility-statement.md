@@ -1,9 +1,11 @@
 ---
-title: Accessibility of this demonstration
+title: Accessibility statement
 ---
 
-This unofficial demonstration is maintained in a personal account, not run by Barlow Medical Centre. This statement was prepared on 30 October 2026. It is not a practice accessibility declaration or a claim of full WCAG compliance.
+This statement was prepared on 30 October 2026.
 
-It uses NHS.UK frontend components, semantic headings, keyboard links and a skip link. No patient forms or embedded third-party services are included. The site has not had an independent accessibility audit, assistive-technology assessment or practice review.
+This website uses NHS.UK frontend components, semantic headings, keyboard links and a skip link. No patient forms or embedded third-party services are included. It has not had an independent accessibility audit or assistive-technology assessment.
 
-For a problem with this demonstration, use the [demo project issue tracker](https://github.com/AbsurdSyssie/Barlow_site/issues). Do not put patient or other sensitive information in a public issue. For practice information in another format, use the practice's current contact channels on its [NHS profile](https://www.nhs.uk/services/gp-surgery/barlow-medical-centre/P84034).
+To report a website accessibility problem, use the [project issue tracker](https://github.com/AbsurdSyssie/Barlow_site/issues). Do not put patient or other sensitive information in a public issue.
+
+For practice information in another format, call [0161&nbsp;445&nbsp;9000](tel:01614459000).

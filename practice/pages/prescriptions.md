@@ -2,20 +2,30 @@
 title: Prescriptions
 ---
 
-Historical policy only. This demonstration cannot order or process prescriptions. Use the [current NHS practice profile](https://www.nhs.uk/services/gp-surgery/barlow-medical-centre/P84034) to reach the practice.
+## Order a repeat prescription
 
-## Ordering repeat prescriptions
+You can order your repeat medicines using:
 
-The archived page listed the NHS account, PATCHS and Patient Access. Patients unable to use online services could bring their paper repeat slip to the practice or ask their preferred pharmacy to order for them.
+- your [NHS account, in the NHS App or on the NHS website](https://www.nhs.uk/nhs-app/account/)
+- [PATCHS](https://patchs.ai/practice/barlowmedicalcentre)
+- [Patient Access](https://www.patientaccess.com/)
 
-**The archived policy did not accept repeat prescription requests by telephone or email.** This differs from the template's generic telephone exception, which has not been carried into this page.
+If you cannot use online services, bring your paper repeat prescription slip to the practice or ask your preferred pharmacy to order for you.
 
-## Collection and questions
+**We do not accept repeat prescription requests by phone or email.**
 
-The archive said prescriptions should reach the nominated pharmacy **2 working days** after ordering. Patients then checked with their pharmacy about collection. Current turnaround needs confirmation.
+If your online account needs linking to your GP record, contact us through PATCHS or call reception for help.
 
-For prescription queries, the archived page listed PATCHS or reception by phone before 3pm. This was for queries, not telephone repeat orders. It also described annual medication reviews by the clinical pharmacists, usually by telephone.
+## Collect your prescription
 
-For general information, use [NHS medicines information](https://www.nhs.uk/medicines/). For urgent help when the practice is closed, use [NHS 111](https://111.nhs.uk/) or call 111. Call 999 in an emergency.
+Your prescription should reach your nominated pharmacy **2 working days** after ordering. Check with your pharmacy when your medicines will be ready to collect.
 
-[Source: prescriptions, captured 11 June 2026; page last updated 6 May 2025](https://web.archive.org/web/20260611155633/https://barlowmed.com/prescriptions/).
+You can change your nominated pharmacy through the app or website you use to order, at a pharmacy, or by contacting the surgery.
+
+## Prescription queries and medication reviews
+
+For a prescription query, use [PATCHS](https://patchs.ai/practice/barlowmedicalcentre) or call [0161&nbsp;445&nbsp;9000](tel:01614459000) **before 3pm**. This phone service is for queries, not repeat prescription orders.
+
+The practice will contact you when a medication review is due. Reviews are usually carried out by a clinical pharmacist by phone.
+
+For general information, visit [NHS medicines information](https://www.nhs.uk/medicines/).

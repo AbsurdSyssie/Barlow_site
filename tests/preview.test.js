@@ -38,10 +38,12 @@ test("unofficial preview defers only absent review facts, not safety errors (H1,
     assert.ok(files.filter((f) => f.endsWith(".html")).length > 10);
     for (const name of files.filter((f) => f.endsWith(".html"))) {
       const html = fs.readFileSync(path.join(tmp, "preview", name), "utf8");
-      assert.match(html, /Unofficial recovered-site demo/);
+      assert.equal((html.match(/Unofficial demo/g) ?? []).length, 1);
       assert.match(html, /Demonstration only, not the official practice website/);
-      assert.match(html, /Unreviewed content/);
-      assert.match(html, /Do not submit patient information/);
+      assert.match(html, /Not approved by the practice/);
+      assert.match(html, /This site does not collect patient information/);
+      assert.doesNotMatch(html, /Unreviewed draft preview|No practice sign-off/);
+      assert.doesNotMatch(html, /<form\b|<iframe\b/i);
       assert.match(html, /<meta name="robots" content="noindex, nofollow">/);
       assert.match(html, /data-safety="urgent-help"/);
       assert.match(html, /href="tel:999"/);
@@ -55,8 +57,13 @@ test("unofficial preview defers only absent review facts, not safety errors (H1,
     );
     assert.match(fs.readFileSync(path.join(tmp, "preview/robots.txt"), "utf8"), /Disallow: \//);
     const about = fs.readFileSync(path.join(tmp, "preview/about/index.html"), "utf8");
-    assert.match(about, /financial year has not been confirmed/);
+    assert.doesNotMatch(about, /GP earnings|financial year has not been confirmed|latest CQC/);
     assert.doesNotMatch(about, /£82,000/);
+    // The configured destination must be usable, not a disabled demo action.
+    const home = fs.readFileSync(path.join(tmp, "preview/index.html"), "utf8");
+    assert.ok(home.includes(`href="${data.online_services.online_consultation.url}"`));
+    assert.doesNotMatch(home, /aria-disabled="true"/);
+    assert.match(home, /Do not use for emergencies/);
     const production = run(false, "production");
     assert.notEqual(production.status, 0);
     assert.match(production.stderr, /gp_earnings.financial_year/);

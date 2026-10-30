@@ -43,10 +43,10 @@ title: Home
   <div class="nhsuk-grid-column-one-third nhsuk-card-group__item">
     {{ card({
       heading: oc.label or "Contact us online",
-      href: "/appointments/",
+      href: oc.url,
       clickable: true,
       headingSize: "s",
-      description: "Ask for an appointment, medical advice or help with an admin request.",
+      description: ((oc.availability ~ ". ") if oc.availability else "Ask for an appointment, medical advice or help with an admin request. ") ~ "Do not use for emergencies.",
       variant: "primary"
     }) }}
   </div>

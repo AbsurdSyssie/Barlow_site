@@ -2,10 +2,16 @@
 title: Test results
 ---
 
-This demonstration cannot provide results or receive enquiries. Use the [current NHS practice profile](https://www.nhs.uk/services/gp-surgery/barlow-medical-centre/P84034) to contact the practice.
+## Get your results
 
-The archived page said that, once reviewed by a doctor, results could be viewed in an NHS account or Patient Access, or requested by phoning **0161 445 9000 after 10am**. Patients could ask for a secure text message.
+Once a doctor has reviewed your results, you can:
 
-It directed questions for a clinician through PATCHS, with help available by phone or in person. These historical arrangements need confirmation; the template's generic “after 2pm” wording was not used.
+- view them in your [NHS account](https://www.nhs.uk/nhs-app/account/)
+- use [Patient Access](https://www.patientaccess.com/)
+- call [0161&nbsp;445&nbsp;9000](tel:01614459000) **after 10am**
 
-[Source: test results, captured 9 May 2026; last updated 6 May 2025](https://web.archive.org/web/20260509142827/https://barlowmed.com/services/test-results/).
+You can also ask for a secure text message with your results.
+
+## Questions about your results
+
+If you need to ask a clinician about your results, contact the practice through [PATCHS](https://patchs.ai/practice/barlowmedicalcentre). If you cannot use the online service, reception can help by phone or in person.

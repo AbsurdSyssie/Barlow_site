@@ -2,8 +2,10 @@
 title: Privacy notice
 ---
 
-This is an unofficial demonstration, not the practice's website. Do not send patient information to this site or its maintainer. It has no patient forms, accounts, analytics or tracking.
+## Using this website
 
-The practice's historical [privacy notice was captured on 9 May 2026](https://web.archive.org/web/20260509144359/https://barlowmed.com/surgery-information/policies/privacy-notice/). It contains references to older legislation, historic organisations, website chatbots and clinical systems. It has not been adopted as this demo's policy or rewritten as a new practice policy.
+This website has no patient forms, accounts, analytics or tracking. Online requests open on the external PATCHS service, which has its own privacy notice.
 
-For the practice's current privacy notice, contact the practice through its [NHS profile](https://www.nhs.uk/services/gp-surgery/barlow-medical-centre/P84034). The Data Protection Officer must supply and approve the current notice before any official launch.
+## The practice privacy notice
+
+For the practice's full privacy notice and information about how your health records are used, contact reception on [0161&nbsp;445&nbsp;9000](tel:01614459000) or ask at the surgery.

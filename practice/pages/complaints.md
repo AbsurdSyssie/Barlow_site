@@ -2,10 +2,20 @@
 title: Feedback and complaints
 ---
 
-This unofficial demonstration cannot receive complaints about the practice. Use the [NHS practice profile](https://www.nhs.uk/services/gp-surgery/barlow-medical-centre/P84034) for current contact details.
+## Share your feedback
 
-The archived practice policy accepted written complaints at Barlow Medical Centre, 828 Wilmslow Road, Didsbury, Manchester, M20 2RN. It described a normal limit of 12 months from the event or becoming aware of it. It said written patient consent was normally needed when complaining for someone else.
+You can give feedback through [PATCHS](https://patchs.ai/practice/barlowmedicalcentre), by calling [0161&nbsp;445&nbsp;9000](tel:01614459000), or in person at reception.
 
-The archive listed feedback through PATCHS, by phone or in person. No feedback form has been copied here. The current complaints lead, escalation route and full procedure must be approved by the practice before launch. The template's generic acknowledgement promise has not been adopted.
+## Make a complaint
 
-[Source: feedback and complaints, captured 23 January 2026; last updated 20 December 2023](https://web.archive.org/web/20260123135435/https://barlowmed.com/surgery-information/feedback-and-complaints/).
+You can write to:
+
+Barlow Medical Centre<br>
+828 Wilmslow Road<br>
+Didsbury<br>
+Manchester<br>
+M20 2RN
+
+Complaints should normally be made within 12 months of the event, or of becoming aware of it. If you are complaining on behalf of someone else, their written consent is normally needed.
+
+Ask reception for the full complaints procedure.

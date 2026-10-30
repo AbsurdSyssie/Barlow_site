@@ -2,30 +2,42 @@
 title: Appointments and home visits
 ---
 
-**In an emergency, call 999. Do not use this demonstration to request care. For urgent help when the practice is closed, use [NHS 111](https://111.nhs.uk/) or call 111.**
+<div class="nhsuk-card nhsuk-card--care nhsuk-card--care--emergency"><div class="nhsuk-card__content"><h2>Call 999 in a life-threatening emergency</h2><p>Do not use PATCHS or wait for a call back.</p></div></div>
 
-Historical information, not a current booking service. Use the [current NHS practice profile](https://www.nhs.uk/services/gp-surgery/barlow-medical-centre/P84034) for contact details.
+## Request an appointment online
+
+Use PATCHS to contact the practice. Clinical requests are available **7am to 10am, Monday to Friday**. For non-urgent requests between **10am and 6:30pm**, use the Admin Query route for routine appointments, medication queries and admin tasks.
+
+<p><a class="nhsuk-button" href="https://patchs.ai/practice/barlowmedicalcentre">Contact us online with PATCHS</a></p>
+
+PATCHS opens on a separate website. It shows which request types are available when you visit.
 
 ## Same-day appointments
 
-The archived practice page asked patients to submit clinical requests through PATCHS between **7am and 10am, Monday to Friday**. It said a Duty Doctor reviewed requests the same day, with a Care Coordinator contacting patients about the next step. This is a historical policy, not a response-time promise from this demo.
+A Duty Doctor reviews clinical requests and decides who is best placed to help. A Care Coordinator will contact you about the next step. Your appointment may be in person or by phone.
 
-The archive said patients unable to use the internet could call **0161 445 9000** for help completing the form. After 10am it directed urgent problems that could not wait until the next day to reception by phone.
+If you cannot use the internet, call [0161&nbsp;445&nbsp;9000](tel:01614459000). Reception can help you complete the form.
+
+**After 10am, call reception if you have an urgent problem that cannot wait until the next day.**
 
 ## Routine appointments
 
-The archive listed PATCHS, reception by phone and future appointments through PATCHS. Direct booking required the account to be linked to NHS Online Services. It described evening and weekend appointments arranged by reception through the Primary Care Network, at Barlow Medical Centre or Burnage Health Centre.
+Request a routine appointment through PATCHS or call reception. Tell us if you would prefer a particular doctor or nurse.
 
-## Changing or cancelling an appointment
+For evening and weekend appointments, speak to reception. These appointments are arranged through the Primary Care Network and take place at Barlow Medical Centre or Burnage Health Centre.
 
-The archived page listed the NHS account, a phone call, or replying CANCEL to the reminder text. Current arrangements need confirmation.
+## Change or cancel an appointment
 
-## Home visits and access needs
+Please tell us as soon as possible if you cannot attend. You can:
 
-The archived policy asked housebound patients to call as early as possible, ideally before 9:30am. It said a clinician would phone first to decide whether a visit was needed. Patients could ask for longer appointments, an interpreter or help with communication needs.
+- use your [NHS account](https://www.nhs.uk/nhs-app/account/)
+- call [0161&nbsp;445&nbsp;9000](tel:01614459000)
+- reply CANCEL to your appointment reminder text
 
-## Online services in this demonstration
+## Home visits
 
-The historical PATCHS destination is recorded in the migration evidence, but this demo does not enable a booking button or collect requests. The practice must confirm the supplier link and hours before launch.
+If you are housebound and need a home visit, call reception as early as possible, ideally **before 9:30am**. A clinician will phone you first to discuss your needs and arrange a visit if needed.
 
-[Source: appointments, captured 9 May 2026; page last updated 6 May 2025](https://web.archive.org/web/20260509141406/https://barlowmed.com/appointments/).
+## Help with your appointment
+
+Tell us when booking if you need a longer appointment, an interpreter, or help with access or communication. You can mention this in your PATCHS request or speak to reception.

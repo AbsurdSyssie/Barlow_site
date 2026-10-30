@@ -12,11 +12,18 @@ npm run lint
 PRACTICE_DIR=tests/fixtures/demo-practice npm test
 npm run build:demo
 npm run lint:html:demo
+npm run audit:demo
 ```
 
 Only `_preview` is a demo artifact. It contains an unconditional unofficial banner, noindex meta tags, robots exclusion and Cloudflare X-Robots-Tag headers, including the error page. Search exclusion is advisory, not authentication. `_site` remains separate. The default production checker/build intentionally fail while the genuine approval date and earnings year are missing. Invalid facts and other safety controls are not bypassed by demo mode. The original GitHub publishing workflow remains gated by production checks; GitHub Pages has not been enabled or configured for this project.
 
 Recovered core pages can replace a restricted set of generic templates in preview only. The urgent-help partial is unchanged. This is not a production-ready practice configuration, and resolving dates alone is insufficient: all [migration questions](practice/MIGRATION-QUERIES.md), content approval, account ownership, rights and safety/accessibility review must be resolved before any official launch. Do not run an official deployment using this demo artifact.
+
+## Usable replacement demo revision, 30 October 2026
+
+The user authorised ordinary source-based practice content and outgoing PATCHS links, not actual practice sign-off. The homepage now uses the NHS.UK journey cards and a working configured supplier anchor; patient pages explain appointments, repeat prescriptions, results, registration, contact/access/parking, opening times, staff, services, fit notes and PPG without repeated archive qualifications. The top banner remains on every page. Noindex and unchanged urgent help remain mandatory. Archive dates, conflicts and unknowns remain in the inventory and queries, not extra footer warnings. Unknown-year earnings are not rendered at all, and the CQC link does not claim a latest report or verified rating.
+
+Exact PATCHS destination: **https://patchs.ai/practice/barlowmedicalcentre**, copied from the archived appointments button and prescription link. Read-only live browser inspection returned the **Barlow Medical Centre** landing page and its clinical/Admin Query availability notice. NHS P84034 independently corroborated the practice identity, address and phone. No login, cookie consent, patient entry or submission was performed. See `practice/sources/online-consultation.json`. Direct booking, registration acceptance and response times are not guaranteed. No local forms, embeds or tracking have been introduced. Production still requires genuine approval and earnings dates, with all other validators unchanged.
 
 ## Evidence and rollback
 

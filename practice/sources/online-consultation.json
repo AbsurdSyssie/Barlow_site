@@ -1,0 +1,10 @@
+{
+  "url": "https://patchs.ai/practice/barlowmedicalcentre",
+  "source": "https://web.archive.org/web/20260509141406id_/https://barlowmed.com/appointments/",
+  "source_link_text": "Submit an online PATCHS form",
+  "corroborating_source": "https://web.archive.org/web/20260611155633id_/https://barlowmed.com/prescriptions/",
+  "live_checked": "2026-10-30",
+  "live_heading": "Barlow Medical Centre",
+  "live_notice": "Clinical requests unavailable at inspection; next available Monday at 07:00. Non-urgent requests 10am to 6:30pm through Admin Query, including routine appointments, medication queries and admin tasks. Urgent health problems today: call the practice.",
+  "verification_method": "Read-only browser navigation of the exact source href. No login, patient information, form submission or cookie consent action. NHS P84034 profile independently confirms the practice name, address and reception phone."
+}
