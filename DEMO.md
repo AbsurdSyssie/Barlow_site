@@ -31,7 +31,7 @@ See [inventory](practice/CONTENT-INVENTORY.md) and [verification](practice/MIGRA
 
 Deploy only to the new `barlow-site` Pages project, never `hhc-site`. To take this demo down, remove its deployment/domain through this new project's settings, preserving all unrelated projects and records. If changing DNS, save the exact prior `barlow.oddtv.uk` record privately first; do not touch the apex, email, HHC or other hosts. Never infer custom-domain activation from a successful Pages upload.
 
-## Deployment record, 30 October 2026
+## Initial deployment record, 30 October 2026
 
 - Separate clone: `/home/oscar/Documents/Code_Projects/Barlow_site`. Fresh upstream baseline `9f58d4a6f1441c5c046da472f97d78cd1d734f12`.
 - New public project: <https://github.com/AbsurdSyssie/Barlow_site>. Only this project's `origin` was pushed; upstream push URL is locally disabled.
@@ -50,3 +50,11 @@ Deploy only to the new `barlow-site` Pages project, never `hhc-site`. To take th
 3. In Workers & Pages → `barlow-site` → Custom domains, wait for `barlow.oddtv.uk` verification and certificate activation. Check HTTPS home, appointments, assets and noindex headers before saying the address works. Do not bypass certificate warnings.
 
 Until then, use the working `.pages.dev` demo address. No patient-facing launch or practice approval is implied by either hostname.
+
+## Replacement revision deployment, 30 October 2026
+
+- Implementation `de55db623eb7d53f7db53a23c027a435551de053`; hosting-integrity follow-up `cfc7ac5`. Both pushed only to `AbsurdSyssie/Barlow_site`. The follow-up supplies a documented `no-transform` response header and an accurate cookie page separating static application behaviour from host security.
+- Fresh, validated `_preview` deployed only to Cloudflare Pages **barlow-site**. Final immutable deployment: <https://6a0eea12.barlow-site.pages.dev/>. Main address: <https://barlow-site.pages.dev/>. The custom hostname <https://barlow.oddtv.uk/> is now HTTPS-active, observed read-only; no DNS or zone-security changes were made by this revision.
+- All 19 `.pages.dev` HTML responses, including the genuine missing-path 404, exactly match the tested local artifact and carry `X-Robots-Tag: noindex, nofollow`. Robots and checked CSS assets match too. All 18 normal custom-host pages match exactly with no injected scripts/frames; its missing-path 404 still receives Cloudflare JavaScript Detections because the host overrides cache control to `no-store`. This concrete hosting exception is tracked in [migration queries](practice/MIGRATION-QUERIES.md), not concealed as a clean custom-host audit. No zone-wide protection was disabled.
+- Final verification: lint; 42 valid-fixture tests; fresh demo build; all 19-page HTML validation and `audit:demo`; REUSE 93/93 files. Valid fictional production check/build/HTML validation passed. Actual production check/build/default tests still refuse missing approval date and earnings year, intentionally. Phone/tablet/desktop visual and rendered-page checks are recorded in `practice/MIGRATION-VERIFICATION.md`; final live home/appointments on both hosts passed phone and desktop overflow, banner, supplier-anchor and no-form/no-frame checks.
+- The source-authentic PATCHS landing page identifies Barlow Medical Centre. No patient submission was made. Independent operational-link risk review and practice approval remain separate follow-ups. HHC source, repository, deployment, server and domain were untouched.
